@@ -1,12 +1,73 @@
-
-<form action = "/cocktails" method="post">
-  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
- <label for ="name"> Name </label>
- <input type ="string" title="cocktails[name]" id="name">
-<!--  <label for="details"> Details </label>
- <input type="text" title="tasks[details]" id= "details">
- <label for="completed"> Completed </label>
- <input type="boolean" title="tasks[completed]" id="completed">
- <input type="submit"> -->
-</form>
+<div class="newcocktails">
+  <h1> Create your own cocktail </h1>
+  <div class="container-form wow fadeInLeft animated" data-wow-delay="0.2s" style="visibility: visible;-webkit-animation-delay: 0.2s; -moz-animation-delay: 0.2s; animation-delay: 0.2s;">
+    <div class="form-wrapper">
+      <form action="/cocktails" role="form" method="post" id="Cocktail Creation">
+        <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+        <div class="row">
+          <div class="col-md-12 form-line">
+            <div class="form-group">
+              <input type="text" class="form-control" id="cocktailname" name="name" required data-errors="Please enter a cocktail name">
+              <div class="help-block with-errors"></div>
+              <ul class="list-unstyled">
+                <li> Please enter a Cocktail name </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+ <!--        <div class="row">
+          <div class="col-md-12 form-line">
+            <div class="form-group">
+              <input type="text" class="form-control" id="ingredientname" name="ingredient">
+              <div class="help-block with-errors"></div>
+              <ul class="list-unstyled">
+                <li> Please enter an ingredient </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 form-line">
+            <div class="form-group">
+              <input type="text" class="form-control" id="ingredientname" name="ingredient">
+              <div class="help-block with-errors"></div>
+              <ul class="list-unstyled">
+                <li> Please enter an ingredient </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 form-line">
+            <div class="form-group">
+              <input type="text" class="form-control" id="ingredientname" name="ingredient">
+              <div class="help-block with-errors"></div>
+              <ul class="list-unstyled">
+                <li> Please enter an ingredient </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 form-line">
+            <div class="form-group">
+              <input type="text" class="form-control" id="ingredientname" name="ingredient">
+              <div class="help-block with-errors"></div>
+              <ul class="list-unstyled">
+                <li> Please enter an ingredient </li>
+              </ul>
+            </div>
+          </div>
+        </div> -->
+        <div class="row">
+          <div class="col-md-12 form-line">
+            <div class="form-group">
+              <a href="#" class="btn-medium">Create</a>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
 
