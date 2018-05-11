@@ -1,12 +1,6 @@
-
-<form action = "/doses" method="post">
-  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
- <label for ="title"> Name </label>
- <input type ="string" title="tasks[title]" id="title">
- <label for="details"> Details </label>
- <input type="text" title="tasks[details]" id= "details">
- <label for="completed"> Completed </label>
- <input type="boolean" title="tasks[completed]" id="completed">
- <input type="submit">
-</form>
-
+<%= simple_form_for ([@cocktail, @dose]) do |f| %>
+  <%= f.input :description %>
+  <%= f.association :cocktail %>
+  <%= f.association :ingredient %>
+  <%= f.button :submit %>
+<% end %>
